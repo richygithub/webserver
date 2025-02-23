@@ -16,9 +16,9 @@ mongoose.connect(process.env.MONGO_URI, {
   .catch(err => console.error('MongoDB connection error:', err));
 
 // 路由
-app.use('/auth', require('./routes/auth'));
+app.use('/login', require('./routes/login'));
 app.use('/courses', require('./routes/courses'));
-app.use('/payment', require('./routes/payment'));
+app.use('/pay', require('./routes/pay'));
 
 // 启动服务
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
