@@ -3,6 +3,10 @@ const mongoose = require('mongoose');
 const https = require('https')
 const fs = require('fs')
 require('dotenv').config();
+console.log(process.env.WX_APPID)
+
+const tokenManager = require('./models/accessToken');
+//import tokenManager from './models/accessToken';
 
 const app = express();
 const PORT = process.env.PORT || 3000;

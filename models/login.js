@@ -1,6 +1,6 @@
-import User from './User.js';
+const User = require('./user')
 
-export const wechatLogin = async (req, res) => {
+module.exports= async (req, res) => {
   const { code, encryptedData, iv } = req.body;
   
   // 获取 session_key
