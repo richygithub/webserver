@@ -1,0 +1,71 @@
+
+{
+    "1":{
+        "title": "自然探索课程",
+        "price": 298,
+        "cover": "https://picsum.photos/750/500?nature1",
+        "detail":{
+            "desc": "这是一门专为青少年设计的户外探索课程，通过实地观察、动手实践和团队协作，帮助学员深入了解生态系统。课程包含森林徒步、动植物识别、野外生存技能等内容.",
+            "images": [
+              "https://picsum.photos/750/500?random=1",
+              "https://picsum.photos/750/500?random=2",
+              "https://picsum.photos/750/500?random=3"
+            ],
+            "duration": "2天1夜",
+            "location": "杭州西溪国家湿地公园",
+            "features": [
+              "专业自然导师带队",
+              "安全保险全程覆盖",
+              "提供全套探索装备",
+              "小班制教学（6-8人）",
+              "颁发课程结业证书"
+            ]          
+        }
+    },
+    "2":{
+        "title": "自然探索课程",
+        "price": 598,
+        "cover": "https://picsum.photos/750/500?nature2",
+        "detail":{
+            "desc": "这是一门专为青少年设计的户外探索课程，通过实地观察、动手实践和团队协作，帮助学员深入了解生态系统。课程包含森林徒步、动植物识别、野外生存技能等内容.",
+            "images": [
+              "https://picsum.photos/750/500?random=21",
+              "https://picsum.photos/750/500?random=22",
+              "https://picsum.photos/750/500?random=23"
+            ],
+            "duration": "3天2夜",
+            "location": "杭州西溪国家湿地公园",
+            "features": [
+              "专业自然导师带队",
+              "安全保险全程覆盖",
+              "提供全套探索装备",
+              "小班制教学（6-8人）",
+              "颁发课程结业证书"
+            ]          
+        }
+    },
+
+    "3":{
+        "title": "自然探索课程",
+        "price": 1298,
+        "cover": "https://picsum.photos/750/500?nature3",
+        "detail":{
+            "desc": "这是一门专为青少年设计的户外探索课程，通过实地观察、动手实践和团队协作，帮助学员深入了解生态系统。课程包含森林徒步、动植物识别、野外生存技能等内容.",
+            "images": [
+              "https://picsum.photos/750/500?random=31",
+              "https://picsum.photos/750/500?random=32",
+              "https://picsum.photos/750/500?random=33"
+            ],
+            "duration": "8天7夜",
+            "location": "杭州西溪国家湿地公园",
+            "features": [
+              "专业自然导师带队",
+              "安全保险全程覆盖",
+              "提供全套探索装备",
+              "小班制教学（6-8人）",
+              "颁发课程结业证书"
+            ]          
+        }
+    }
+}
+

@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors')
 const https = require('https')
 const fs = require('fs')
 require('dotenv').config();
@@ -16,8 +17,19 @@ const options = {
   cert: fs.readFileSync('./cert.pem')
 };
 
-// 中间件
-app.use(express.json());
+app.use(cors()) // 解决跨域问题
+app.use(express.json()) // 解析JSON请求体
+app.use(express.urlencoded({ extended: true })) // 解析表单数据
+
+
+app.get('/', (req, res) => {
+  res.status(200).json({
+    status: 'running',
+    timestamp: new Date().toISOString(),
+    version: '1.0.0'
+  })
+})
+
 
 const dburl="mongodb://127.0.0.1:27017"
 // 连接 MongoDB
@@ -30,7 +42,13 @@ mongoose.connect(dburl, {
 // 路由
 app.use('/login', require('./routes/login'));
 app.use('/courses', require('./routes/courses'));
-app.use('/pay', require('./routes/order'));
+app.use('/order', require('./routes/order'));
+
+// 错误处理中间件
+app.use((err, req, res, next) => {
+  console.error(err.stack)
+  res.status(500).json({ code: 500, message: '服务器内部错误' })
+})
 
 // 启动服务
 //app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

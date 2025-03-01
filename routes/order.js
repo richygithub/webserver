@@ -4,7 +4,7 @@ const router = express.Router();
 
 // 获取课程列表
 // routes/order.js
-router.post('/orders', async (req, res) => {
+router.post('/', async (req, res) => {
   try {
     const { courseId, travelers, openid } = req.body;
     
@@ -33,3 +33,5 @@ router.post('/orders', async (req, res) => {
     handleError(res, err);
   }
 });
+
+module.exports = router;
