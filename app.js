@@ -30,7 +30,7 @@ mongoose.connect(dburl, {
 // 路由
 app.use('/login', require('./routes/login'));
 app.use('/courses', require('./routes/courses'));
-app.use('/pay', require('./routes/pay'));
+app.use('/pay', require('./routes/order'));
 
 // 启动服务
 //app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
